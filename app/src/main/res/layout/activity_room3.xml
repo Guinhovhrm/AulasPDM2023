@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".activityRoom2">
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="202dp"
+        android:layout_height="124dp"
+        android:text="Ele não está aqui"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="165dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
