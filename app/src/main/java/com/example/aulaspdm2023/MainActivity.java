@@ -32,16 +32,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         btnCozinha = findViewById(R.id.btnCozinha);
-
+        btnCozinha.setOnClickListener(new View.OnClickListener(){
+            public void onClick (View view){
+                Intent in = new Intent(MainActivity.this, activityCozinha.class);
+            }
+        });
         btnRoom = findViewById(R.id.btnRoom);
         btnRoom.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
                 Intent in = new Intent(MainActivity.this, activityRoom.class);
             }
         });
-
         btnRoom2 = findViewById(R.id.btnRoom2);
+        btnRoom2.setOnClickListener(new View.OnClickListener(){
+            public void onClick (View view){
+                Intent in = new Intent(MainActivity.this, activityRoom2.class);
+            }
+        });
         btnOffice = findViewById(R.id.btnOffice);
+        btnOffice.setOnClickListener(new View.OnClickListener(){
+            public void onClick (View view){
+                Intent in = new Intent(MainActivity.this, activityOffice.class);
+            }
+        });
 
     }
 }
