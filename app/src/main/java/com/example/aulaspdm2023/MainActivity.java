@@ -2,26 +2,28 @@ package com.example.aulaspdm2023;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSala;
-    Button btnCozinha;
+    Button btnMemoria;
+    Button btnCalcSimples;
     Button btnBath;
     Button btnRoom;
     Button btnRoom2;
     Button btnOffice;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnSala = findViewById(R.id.btnSala);
-        btnSala.setOnClickListener(new View.OnClickListener(){
+        btnMemoria = findViewById(R.id.btnMemoria);
+        btnMemoria.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent in = new Intent(MainActivity.this, activitySala.class);
+                Intent in = new Intent(MainActivity.this, activityMemoria.class);
             }
         });
 
@@ -31,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent in = new Intent(MainActivity.this, activityBath.class);
             }
         });
-        btnCozinha = findViewById(R.id.btnCozinha);
-        btnCozinha.setOnClickListener(new View.OnClickListener(){
+        btnCalcSimples = findViewById(R.id.btnCalcSimples);
+        btnCalcSimples.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent in = new Intent(MainActivity.this, activityCozinha.class);
+                Intent in = new Intent(MainActivity.this, activityCalculadoraSimples.class);
             }
         });
         btnRoom = findViewById(R.id.btnRoom);
