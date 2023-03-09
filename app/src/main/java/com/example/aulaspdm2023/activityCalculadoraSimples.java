@@ -28,8 +28,8 @@ public class activityCalculadoraSimples extends AppCompatActivity {
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in;
-                //in.putExtra("n1", );
+                Intent in = new Intent();
+                //in.putExtra("n1",);
             }
         });
 
