@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class activityCalculadoraSimples extends AppCompatActivity {
     Button btnVoltar;
+    Button btnCalcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,17 @@ public class activityCalculadoraSimples extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        btnCalcular = findViewById(R.id.btnCalcular);
+        btnCalcular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in;
+                //in.putExtra("n1", );
+            }
+        });
+
+
 
 
 

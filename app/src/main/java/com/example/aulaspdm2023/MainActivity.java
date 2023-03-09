@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnCalcSimples.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
                 Intent in = new Intent(MainActivity.this, activityCalculadoraSimples.class);
+                startActivity(in);
             }
         });
         btnRoom = findViewById(R.id.btnRoom);
