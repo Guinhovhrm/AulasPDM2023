@@ -6,15 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class activityCalculadoraSimples extends AppCompatActivity {
     Button btnVoltar;
     Button btnCalcular;
+    Button btnMais;
+    EditText edN1, edN2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculadorasimples);
+        edN1 = findViewById(R.id.edN1);
+        edN2 = findViewById(R.id.edN2);
         btnVoltar = findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,15 +29,17 @@ public class activityCalculadoraSimples extends AppCompatActivity {
             }
         });
 
-        btnCalcular = findViewById(R.id.btnCalcular);
-        btnCalcular.setOnClickListener(new View.OnClickListener() {
+        btnMais = findViewById(R.id.btnMais);
+        btnMais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent();
-                //in.putExtra("n1",);
+                double n1 = Double.parseDouble(edN1.getText().toString());
+                double n2 = Double.parseDouble(edN1.getText().toString());
+                double soma = n1 + n2;
+
+
             }
         });
-
 
 
 
