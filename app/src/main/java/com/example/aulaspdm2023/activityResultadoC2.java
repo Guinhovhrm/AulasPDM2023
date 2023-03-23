@@ -21,6 +21,7 @@ public class activityResultadoC2 extends AppCompatActivity {
         String ValorMult = in.getStringExtra("ValorMult");
         String ValorDiv = in.getStringExtra("ValorDiv");
 
-        tvResultado.setText(ValorMais + ValorMenos + ValorMult + ValorDiv);
+
+        tvResultado.setText(ValorMais);
     }
 }
