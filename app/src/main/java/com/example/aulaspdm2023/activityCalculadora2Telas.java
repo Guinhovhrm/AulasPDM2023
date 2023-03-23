@@ -90,7 +90,7 @@ public class activityCalculadora2Telas extends AppCompatActivity {
                 double div = n1 / n2;
                 String divSt = String.valueOf(div);
                 Intent in = new Intent();
-                in.putExtra("valorDiv", divSt);
+                in.putExtra("ValorDiv", divSt);
                 //edN3.setText(divSt);
             }
         });

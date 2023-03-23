@@ -16,6 +16,11 @@ public class activityResultadoC2 extends AppCompatActivity {
 
         tvResultado = findViewById(R.id.tvResultado);
         Intent in = getIntent();
+        String ValorMais = in.getStringExtra("ValorMais");
+        String ValorMenos = in.getStringExtra("ValorMenos");
+        String ValorMult = in.getStringExtra("ValorMult");
+        String ValorDiv = in.getStringExtra("ValorDiv");
 
+        tvResultado.setText(ValorMais + ValorMenos + ValorMult + ValorDiv);
     }
 }
