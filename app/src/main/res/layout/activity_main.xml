@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnBath"
-        android:layout_width="132dp"
-        android:layout_height="72dp"
+        android:id="@+id/btnCalc2"
+        android:layout_width="154dp"
+        android:layout_height="68dp"
         android:layout_marginBottom="28dp"
-        android:text="Banheiro"
+        android:text="Calculadora 2 telas"
         app:layout_constraintBottom_toTopOf="@+id/btnRoom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -52,7 +52,7 @@
         android:layout_height="68dp"
         android:layout_marginBottom="52dp"
         android:text="Calculadora Simples"
-        app:layout_constraintBottom_toTopOf="@+id/btnBath"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalc2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />

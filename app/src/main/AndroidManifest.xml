@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AulasPDM2023"
         tools:targetApi="31">
         <activity
+            android:name=".activityResultadoC2"
+            android:exported="false" />
+        <activity
             android:name=".activityCalculadoraSimples"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
             android:name=".activityRoom"
             android:exported="false" />
         <activity
-            android:name=".activityBath"
+            android:name=".activityCalculadora2Telas"
             android:exported="false" />
         <activity
             android:name=".activityMemoria"

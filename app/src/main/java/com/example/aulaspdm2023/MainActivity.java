@@ -11,7 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button btnMemoria;
     Button btnCalcSimples;
-    Button btnBath;
+    Button btnCalc2;
     Button btnRoom;
     Button btnRoom2;
     Button btnOffice;
@@ -27,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnBath = findViewById(R.id.btnBath);
-        btnBath.setOnClickListener(new View.OnClickListener(){
+        btnCalc2 = findViewById(R.id.btnCalc2);
+        btnCalc2.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent in = new Intent(MainActivity.this, activityBath.class);
+                Intent in = new Intent(MainActivity.this, activityCalculadora2Telas.class);
+                startActivity(in);
             }
         });
         btnCalcSimples = findViewById(R.id.btnCalcSimples);

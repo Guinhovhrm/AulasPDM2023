@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class activityCalculadoraSimples extends AppCompatActivity {
     Button btnVoltar;
-    Button btnCalcular;
+
     Button btnMais, btnMenos, btnVezes, btnDiv;
     EditText edN1, edN2, edN3;
 
