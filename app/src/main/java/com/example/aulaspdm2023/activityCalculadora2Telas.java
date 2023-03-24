@@ -10,12 +10,10 @@ import android.widget.EditText;
 
 public class activityCalculadora2Telas extends AppCompatActivity {
 
-    Button btnVoltarC2, btnMostrar;
-    Button btnMaisC2;
-    Button btnMenosC2;
-    Button btnVezesC2;
-    Button btnDivC2;
+    Button btnVoltarC2;
+    Button btnMaisC2, btnMenosC2, btnVezesC2, btnDivC2;
     EditText etN1, etN2;
+    String  valorFinal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +32,6 @@ public class activityCalculadora2Telas extends AppCompatActivity {
                 startActivity(in);
             }
         });
-        btnMostrar = findViewById(R.id.btnMostrar);
-        btnMostrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent in = new Intent(activityCalculadora2Telas.this, activityResultadoC2.class);
-                startActivity(in);
-            }
-        });
         btnMaisC2 = findViewById(R.id.btnMaisC2);
         btnMaisC2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,10 +39,13 @@ public class activityCalculadora2Telas extends AppCompatActivity {
                 double n1 = Double.parseDouble(etN1.getText().toString());
                 double n2 = Double.parseDouble(etN2.getText().toString());
                 double soma = n1 + n2;
-                String somaSt = String.valueOf(soma);
-                Intent in = new Intent();
-                in.putExtra("ValorMais", somaSt);
-                //edN3.setText(somaSt);
+                valorFinal = String.valueOf(soma);
+                Intent in = new Intent(activityCalculadora2Telas.this, activityResultadoC2.class);
+                in.putExtra("ValorMenos", valorFinal);
+                in.putExtra("ValorMult", valorFinal);
+                in.putExtra("ValorMais", valorFinal);
+                in.putExtra("ValorDiv", valorFinal);
+                startActivity(in);
             }
         });
         btnMenosC2 = findViewById(R.id.btnMenosC2);
@@ -62,10 +55,13 @@ public class activityCalculadora2Telas extends AppCompatActivity {
                 double n1 = Double.parseDouble(etN1.getText().toString());
                 double n2 = Double.parseDouble(etN2.getText().toString());
                 double sub = n1 - n2;
-                String subSt = String.valueOf(sub);
-                Intent in = new Intent();
-                in.putExtra("ValorMenos", subSt);
-                //edN3.setText(subSt);
+                valorFinal = String.valueOf(sub);
+                Intent in = new Intent(activityCalculadora2Telas.this, activityResultadoC2.class);
+                in.putExtra("ValorMenos", valorFinal);
+                in.putExtra("ValorMult", valorFinal);
+                in.putExtra("ValorMais", valorFinal);
+                in.putExtra("ValorDiv", valorFinal);
+                startActivity(in);
             }
         });
         btnVezesC2 = findViewById(R.id.btnVezesC2);
@@ -75,10 +71,13 @@ public class activityCalculadora2Telas extends AppCompatActivity {
                 double n1 = Double.parseDouble(etN1.getText().toString());
                 double n2 = Double.parseDouble(etN2.getText().toString());
                 double mult = n1 * n2;
-                String multSt = String.valueOf(mult);
-                Intent in = new Intent();
-                in.putExtra("ValorMult", multSt);
-                //edN3.setText(multSt);
+                valorFinal = String.valueOf(mult);
+                Intent in = new Intent(activityCalculadora2Telas.this, activityResultadoC2.class);
+                in.putExtra("ValorMenos", valorFinal);
+                in.putExtra("ValorMult", valorFinal);
+                in.putExtra("ValorMais", valorFinal);
+                in.putExtra("ValorDiv", valorFinal);
+                startActivity(in);
             }
         });
         btnDivC2 = findViewById(R.id.btnDivC2);
@@ -88,10 +87,13 @@ public class activityCalculadora2Telas extends AppCompatActivity {
                 double n1 = Double.parseDouble(etN1.getText().toString());
                 double n2 = Double.parseDouble(etN2.getText().toString());
                 double div = n1 / n2;
-                String divSt = String.valueOf(div);
-                Intent in = new Intent();
-                in.putExtra("ValorDiv", divSt);
-                //edN3.setText(divSt);
+                valorFinal = String.valueOf(div);
+                Intent in = new Intent(activityCalculadora2Telas.this, activityResultadoC2.class);
+                in.putExtra("ValorMenos", valorFinal);
+                in.putExtra("ValorMult", valorFinal);
+                in.putExtra("ValorMais", valorFinal);
+                in.putExtra("ValorDiv", valorFinal);
+                startActivity(in);
             }
         });
 
