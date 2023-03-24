@@ -9,12 +9,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnMemoria;
-    Button btnCalcSimples;
-    Button btnCalc2;
-    Button btnRoom;
-    Button btnRoom2;
+    Button btnMemoria, btnCalcSimples, btnCalc2, btnConversor, btnIMC;
     Button btnOffice;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnMemoria.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
                 Intent in = new Intent(MainActivity.this, activityMemoria.class);
+                startActivity(in);
             }
         });
 
@@ -41,22 +39,25 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
-        btnRoom = findViewById(R.id.btnRoom);
-        btnRoom.setOnClickListener(new View.OnClickListener(){
+        btnConversor = findViewById(R.id.btnConversor);
+        btnConversor.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent in = new Intent(MainActivity.this, activityRoom.class);
+                Intent in = new Intent(MainActivity.this, activityConversor.class);
+                startActivity(in);
             }
         });
-        btnRoom2 = findViewById(R.id.btnRoom2);
-        btnRoom2.setOnClickListener(new View.OnClickListener(){
+        btnIMC = findViewById(R.id.btnIMC);
+        btnIMC.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent in = new Intent(MainActivity.this, activityRoom2.class);
+                Intent in = new Intent(MainActivity.this, activityCalculoIMC.class);
+                startActivity(in);
             }
         });
         btnOffice = findViewById(R.id.btnOffice);
         btnOffice.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
                 Intent in = new Intent(MainActivity.this, activityOffice.class);
+                startActivity(in);
             }
         });
 

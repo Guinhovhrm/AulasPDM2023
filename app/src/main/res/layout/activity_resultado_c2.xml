@@ -21,13 +21,14 @@
 
     <TextView
         android:id="@+id/tvResultado"
-        android:layout_width="245dp"
-        android:layout_height="96dp"
+        android:layout_width="171dp"
+        android:layout_height="58dp"
         android:textColor="#000000"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="83dp" />
+        app:layout_constraintVertical_bias="0.562"
+        tools:layout_editor_absoluteX="120dp" />
 
     <Button
         android:id="@+id/btnEdit"

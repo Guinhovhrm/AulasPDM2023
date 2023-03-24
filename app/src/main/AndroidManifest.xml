@@ -21,10 +21,10 @@
             android:name=".activityOffice"
             android:exported="false" />
         <activity
-            android:name=".activityRoom2"
+            android:name=".activityCalculoIMC"
             android:exported="false" />
         <activity
-            android:name=".activityRoom"
+            android:name=".activityConversor"
             android:exported="false" />
         <activity
             android:name=".activityCalculadora2Telas"

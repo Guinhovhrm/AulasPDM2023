@@ -12,7 +12,7 @@
         android:layout_height="68dp"
         android:layout_marginBottom="28dp"
         android:text="Calculadora 2 telas"
-        app:layout_constraintBottom_toTopOf="@+id/btnRoom"
+        app:layout_constraintBottom_toTopOf="@+id/btnConversor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -27,22 +27,22 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRoom2"
+        android:id="@+id/btnIMC"
         android:layout_width="132dp"
         android:layout_height="72dp"
         android:layout_marginBottom="12dp"
-        android:text="Quarto 2"
+        android:text="Calcular IMC"
         app:layout_constraintBottom_toTopOf="@+id/btnOffice"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnRoom"
+        android:id="@+id/btnConversor"
         android:layout_width="132dp"
         android:layout_height="72dp"
         android:layout_marginBottom="12dp"
-        android:text="Quarto"
-        app:layout_constraintBottom_toTopOf="@+id/btnRoom2"
+        android:text="Dolar para Real"
+        app:layout_constraintBottom_toTopOf="@+id/btnIMC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
