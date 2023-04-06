@@ -72,6 +72,7 @@ public class activityCalculadoraSimples extends AppCompatActivity {
                 double div = n1 / n2;
                 String divSt = String.valueOf(div);
                 edN3.setText(divSt);
+
             }
         });
 
