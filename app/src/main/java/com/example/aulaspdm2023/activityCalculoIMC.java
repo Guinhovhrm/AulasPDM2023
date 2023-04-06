@@ -34,9 +34,7 @@ public class activityCalculoIMC extends AppCompatActivity {
                 double peso = Double.parseDouble(edPeso.getText().toString());
                 double altura = Double.parseDouble(edAltura.getText().toString());
                 double imc = peso / ((altura/100) * (altura/100));
-                System.out.println(imc);
                 String tvIMC = String.valueOf(df.format(imc));
-                System.out.println(tvIMC);
                 tvResultadoIMC.setText("IMC: " + tvIMC);
 
                 if (imc < 18.5){
