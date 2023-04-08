@@ -15,20 +15,22 @@
         android:textColor="#000000"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvResultado"
-        android:layout_width="171dp"
-        android:layout_height="58dp"
+        android:layout_width="283dp"
+        android:layout_height="144dp"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.562"
-        tools:layout_editor_absoluteX="120dp" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/btnEdit"
