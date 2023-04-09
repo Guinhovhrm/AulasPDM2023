@@ -9,8 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnMemoria, btnCalcSimples, btnCalc2, btnConversor, btnIMC;
-    Button btnOffice;
+    Button btnMemoria, btnCalcSimples, btnCalc2, btnConversor, btnIMC, btnGeradorRandom;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -53,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
-        btnOffice = findViewById(R.id.btnOffice);
-        btnOffice.setOnClickListener(new View.OnClickListener(){
+        btnGeradorRandom = findViewById(R.id.btnGeradorRandom);
+        btnGeradorRandom.setOnClickListener(new View.OnClickListener(){
             public void onClick (View view){
-                Intent in = new Intent(MainActivity.this, activityOffice.class);
+                Intent in = new Intent(MainActivity.this, activityGeradorNumeros.class);
                 startActivity(in);
             }
         });

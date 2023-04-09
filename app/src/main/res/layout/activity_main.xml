@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnOffice"
+        android:id="@+id/btnGeradorRandom"
         android:layout_width="164dp"
         android:layout_height="72dp"
         android:layout_marginBottom="228dp"
-        android:text="Escritório"
+        android:text="Gerador de numeros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -34,7 +34,7 @@
         android:layout_height="72dp"
         android:layout_marginBottom="16dp"
         android:text="Calcular IMC"
-        app:layout_constraintBottom_toTopOf="@+id/btnOffice"
+        app:layout_constraintBottom_toTopOf="@+id/btnGeradorRandom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />

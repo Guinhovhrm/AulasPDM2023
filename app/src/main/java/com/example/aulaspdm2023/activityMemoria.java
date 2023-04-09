@@ -25,21 +25,28 @@ public class activityMemoria extends AppCompatActivity {
         btnComparar = findViewById(R.id.btnComparar);
         tvWord = findViewById(R.id.tvWord);
         edChute = findViewById(R.id.edChute);
-        Intent in = new Intent();
+
         btnShowWord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
-                if (tvWord.getText() == ""){
-                tvWord.setText("GuinhoBonito");
-                btnShowWord.setText("Esconder");
-                }else{
+                if (tvWord.getText() == "") {
+                    tvWord.setText("Android Studio");
+                    btnShowWord.setText("Esconder");
+                } else {
                     tvWord.setText("");
-
+                    btnShowWord.setText("Mostrar");
                 }
+            }
+        });
 
-
+        btnComparar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(activityMemoria.this, MemoriaResultado.class);
+                in.putExtra("resposta", edChute.getText().toString());
+                startActivity(in);
             }
         });
 
