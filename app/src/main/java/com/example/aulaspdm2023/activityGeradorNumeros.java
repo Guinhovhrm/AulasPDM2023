@@ -31,11 +31,14 @@ public class activityGeradorNumeros extends AppCompatActivity {
             public void onClick(View view) {
                 String stQuantidade = String.valueOf(edQtndNum.getText().toString());
                 int quantidade = Integer.parseInt(stQuantidade);
-
-                Math.random();
-
+                for (int i = 0; i < quantidade; i++){
+                    int randomNum = Integer.parseInt(String.valueOf(Math.random() * (quantidade + 1)));
+                    System.out.println(randomNum);
+                    tvNumeros.setText(randomNum);
+                }
             }
         });
+
 
     }
 }
