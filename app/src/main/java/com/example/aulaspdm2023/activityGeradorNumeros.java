@@ -29,10 +29,10 @@ public class activityGeradorNumeros extends AppCompatActivity {
         btnGerar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String stQuantidade = String.valueOf(edQtndNum);
+                String stQuantidade = String.valueOf(edQtndNum.getText().toString());
                 int quantidade = Integer.parseInt(stQuantidade);
-                System.out.println(quantidade);
 
+                Math.random();
 
             }
         });
