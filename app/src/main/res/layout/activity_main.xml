@@ -7,22 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnGeradorRandom"
-        android:layout_width="164dp"
-        android:layout_height="72dp"
-        android:layout_marginBottom="16dp"
-        android:text="Gerador de numeros"
-        app:layout_constraintBottom_toTopOf="@+id/btnChar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/btnChar"
         android:layout_width="164dp"
         android:layout_height="72dp"
-        android:layout_marginBottom="132dp"
-        android:text="Gerador de numeros"
+        android:layout_marginBottom="88dp"
+        android:text="Substituir e localizar caracteres"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -40,20 +29,21 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnIMC"
+        android:id="@+id/btnCalc2"
         android:layout_width="164dp"
-        android:layout_height="72dp"
+        android:layout_height="68dp"
         android:layout_marginBottom="16dp"
-        android:text="Calcular IMC"
-        app:layout_constraintBottom_toTopOf="@+id/btnGeradorRandom"
+        android:text="Calculadora 2 telas"
+        app:layout_constraintBottom_toTopOf="@+id/btnConversor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnMemoria"
         android:layout_width="164dp"
         android:layout_height="68dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="Jogo da memoria"
         app:layout_constraintBottom_toTopOf="@+id/btnCalcSimples"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,23 +53,34 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
+        android:id="@+id/btnIMC"
+        android:layout_width="164dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="Calcular IMC"
+        app:layout_constraintBottom_toTopOf="@+id/btnGeradorRandom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGeradorRandom"
+        android:layout_width="164dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:text="Gerador de numeros"
+        app:layout_constraintBottom_toTopOf="@+id/btnChar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btnCalcSimples"
         android:layout_width="164dp"
         android:layout_height="68dp"
         android:layout_marginBottom="16dp"
         android:text="Calculadora Simples"
         app:layout_constraintBottom_toTopOf="@+id/btnCalc2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnCalc2"
-        android:layout_width="164dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="16dp"
-        android:text="Calculadora 2 telas"
-        app:layout_constraintBottom_toTopOf="@+id/btnConversor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
